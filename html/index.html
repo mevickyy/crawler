@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crawler</title>
+</head>
+<body>
+<label>Enter URL</label><input id="crawler" type="text" name="crawler"><br><br>
+<label>Enter Depth Level</label><input id="level" type="text" name="level"><br><br>
+<button id="submit">Submit</button>
+<table class="table table-framed">
+    <thead>
+        <tr>
+            <th>Images</th>
+        </tr>
+    </thead>
+    <tbody id="imgs">
+    </tbody>
+</table>
+
+<table class="table table-framed">
+    <thead>
+        <tr>
+            <th>Links</th>
+        </tr>
+    </thead>
+    <tbody id="lnks">
+    </tbody>
+</table>
+</body>
+<script src="jquery.min.js"></script>
+<script src="validate.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".table-framed").hide();
+		$('input[name="level"]').keyup(function(e){
+		  if (/\D/g.test(this.value))
+		  {
+		    this.value = this.value.replace(/\D/g, '');
+		  }
+		});
+	});
+	$('#submit').on('click', function(){
+		$('#submit').text('Loading Please Wait');
+		$('#imgs').html("");
+		$('#lnks').html("");
+		var url_input = $('#crawler').val();
+		var level_input = $('#level').val();
+		if(level_input == "" && url_input == ""){
+			alert("Please Fill the field");
+		}		
+		var re = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+		if (!re.test(url_input)) { 
+		    alert("url error");
+		    return false;
+		}
+		$.ajax({
+		    type: "GET",
+		   	url: "http://127.0.0.1:8000/api/scrap/?level="+level_input+"&url="+url_input.replace(/\/$/, ""),
+		    success: function (response) {
+		    	$('#submit').text("Submit");
+		    	$(".table-framed").show();
+		    	var html = "";
+		    	var htmllinks = ""; 
+		    	for (var i = 0; i < response.result.length; i++) {
+		    		for(var j = 0; j < response.result[i].images.length; j++){
+		    			html ='<tr><td>'+response.result[i].images[j]+'</td></tr>';
+		    			$('#imgs').append(html);
+		    		}
+		    		for(var k = 0; k < response.result[i].links.length; k++){
+		    			htmllinks ='<tr><td>'+response.result[i].links[k]+'</td></tr>';
+		    			$('#lnks').append(htmllinks);
+		    		}	
+		    	}
+		    }
+		});
+	})
+</script>
+</html>

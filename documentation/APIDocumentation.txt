@@ -1,0 +1,245 @@
+API STRUCTURE
+===============================================
+1. For Scraping
+	Method: GET
+	URL: http://127.0.0.1:8000/api/scrap/?level=2&url=https://gale.agency
+	
+	Request Params: [{
+        "level": 2,
+        "url": "https://gale.agency",
+    }]
+   
+    Response data: 
+    [{
+    "result": [
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        },
+        {
+            "images": [
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/04/gale-logo-white.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/blue-arrow.svg",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/orange-arrow.svg",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/BMW@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/BMW@2x.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/REI@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/REI@2x.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/CA-Technologies@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/CA-Technologies@2x.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/Garage-Dynamite@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/Garage-Dynamite@2x.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/Mcdonalds@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/Mcdonalds@2x.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/David_s-Bridal@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/David_s-Bridal@2x.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/Genting@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/Genting@2x.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/MGM-Grand@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/06/MGM-Grand@2x.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/Travel-Edge@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/error.png",
+                "https://cdn.gale.agency/wp-content/uploads/2018/06/Travel-Edge@2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/green-arrow.svg",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/royal-green-arrow.svg",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/sky-blue-arrow.svg",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/royal-blue-arrow.svg",
+                "https://cdn2.gale.agency/wp-content/themes/boo-child/assets/plus2x.png",
+                "https://cdn.gale.agency/wp-content/themes/boo-child/assets/minus2x.png",
+                "https://cdn2.gale.agency/wp-content/uploads/2018/04/Gale-logo-x2.png"
+            ],
+            "links": [
+                "https://gale.agency/comments/feed/",
+                "https://gale.agency/about/",
+                "https://gale.agency/alchemy/",
+                "https://gale.agency/careers/",
+                "https://gale.agency/ideas/",
+                "https://gale.agency/feed/",
+                "https://gale.agency/work/",
+                "https://gale.agency/contact/"
+            ]
+        }
+    ]
+}]
+
+	
